@@ -19,7 +19,7 @@ html {
 } */
 
 body {
-  background: red;
+  background: blue;
   color: #fff;
 }
 
@@ -529,6 +529,7 @@ header .menu ul li:nth-child(4)::before {
   }
   section.home {
     height: calc(100vh - 60px);
+    padding-top: 0;
   }
   section.games .top {
     display: flex;
