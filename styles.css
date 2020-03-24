@@ -24,7 +24,6 @@ body {
 }
 
 header {
-  /* height: 81.25px; */
   position: fixed;
   width: 100%;
   display: flex;
@@ -103,7 +102,6 @@ header .subMenu {
   display: none;
   align-items: center;
   width: 100%;
-  overflow-x: auto;
 }
 
 header .subMenu.active {
@@ -130,6 +128,98 @@ header .subMenu ul li {
 
 header .subMenu ul li:hover {
   text-shadow: 0 0 15px #fff;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileMenu span.menuClose {
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  margin: 20px;
+  position: fixed;
+  z-index: 9999;
+}
+
+.mobileMenu .logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.mobileMenu .menus {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mobileMenu .menus span {
+  padding: 10px 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.mobileMenu .boxCategory {
+  margin-top: 20px;
+  width: 250px;
+  border: 3px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mobileMenu .boxCategory::after {
+  content: '';
+  top: -20px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+
+.mobileMenu .boxCategory .category {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8.5px;
+}
+
+.mobileMenu .boxCategory .category:nth-child(odd) {
+  background: rgb(20, 20, 20);
+}
+
+.mobileMenu .boxCategory .category:nth-child(even) {
+  background: #000;
+}
+
+.mobileMenu .cart {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu .cart i {
+  font-size: 30px;
+}
+
+.mobileMenu .cart h2 {
+  margin-left: 10px;
 }
 
 section {
