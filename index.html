@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IMPERIO</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <div class="logo">
+        Imperio
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>Games</li>
+        <li>Email</li>
+      </ul>
+      <div class="cart">
+        <i class="material-icons">shopping_cart</i>
+        <h2>
+          Cart
+        </h2>
+      </div>
+      <div class="menuIcon">
+        <span class="material-icons">menu</span>
+      </div>
+    </div>
+
+    <div class="subMenu">
+      <ul>
+        <li>Shoot</li>
+        <li>Rpg</li>
+      </ul>
+    </div>
+
+  </header>
+
+  <section class="home">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/farCry.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/sillentHill.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/tombRaider.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/cs.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="games shoot" id="games">
+
+    <div class="top">
+      <h2>Shoot games</h2>
+      <div class="data">
+        <div>
+          <i class="material-icons">keyboard_arrow_down</i>
+          <div>
+            <h3>Downloads</h3>
+            <p>744</p>
+          </div>
+        </div>
+
+        <div>
+          <i class="material-icons">people_alt</i>
+          <div>
+            <h3>Online</h3>
+            <p>12</p>
+          </div>
+        </div>
+
+        <div>
+          <i class="material-icons">star</i>
+          <div>
+            <h3>Stars</h3>
+            <p>55</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxType">
+      <div class="info">
+        <div class="desc">Free to play</div>
+        <div class="qty">(3)</div>
+      </div>
+      <div class="conteinerGames">
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+      </div>
+    </div>
+
+    <div class="boxType">
+      <div class="info">
+        <div class="desc">Most popular</div>
+        <div class="qty">(4)</div>
+      </div>
+      <div class="conteinerGames">
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="games rpg">
+
+    <div class="top">
+      <h2>RPG games</h2>
+      <div class="data">
+        <div>
+          <i class="material-icons">keyboard_arrow_down</i>
+          <div>
+            <h3>Downloads</h3>
+            <p>744</p>
+          </div>
+        </div>
+
+        <div>
+          <i class="material-icons">people_alt</i>
+          <div>
+            <h3>Online</h3>
+            <p>12</p>
+          </div>
+        </div>
+
+        <div>
+          <i class="material-icons">star</i>
+          <div>
+            <h3>Stars</h3>
+            <p>55</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxType">
+      <div class="info">
+        <div class="desc">Free to play</div>
+        <div class="qty">(2)</div>
+      </div>
+      <div class="conteinerGames">
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+      </div>
+    </div>
+
+    <div class="boxType">
+      <div class="info">
+        <div class="desc">Most popular</div>
+        <div class="qty">(3)</div>
+      </div>
+      <div class="conteinerGames">
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+        <div class="boxGame"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="menuBottom">
+    <ul class="icons">
+      <span class="material-icons">home</span>
+      <span class="material-icons">games</span>
+      <span class="material-icons">email</span>
+    </ul>
+  </div>
+
+  <div class="up">
+    <i class="material-icons">arrow_upward</i>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+
+</html>
