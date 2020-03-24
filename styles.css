@@ -95,8 +95,8 @@ header .menu .menuIcon {
 }
 
 header .menu .menuIcon span {
-  font-size: 50px;
-  margin-right: 30px;
+  font-size: 40px;
+  margin-right: 20px;
 }
 
 header .subMenu {
@@ -468,7 +468,7 @@ header ul li:nth-child(4)::before {
     display: block;
   }
   header .menu .logo {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   header .menu {
     justify-content: space-between;
@@ -484,5 +484,17 @@ header ul li:nth-child(4)::before {
   }
   header .subMenu {
     display: none;
+  }
+  section.games .top {
+    display: flex;
+    flex-direction: column;
+  }
+  section.games .top h2 {
+    margin: 0;
+  }
+  section.games .top .data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
