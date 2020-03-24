@@ -506,7 +506,7 @@ header .menu ul li:nth-child(4)::before {
 }
 
 @media(max-width: 700PX) {
-  /* header .menu .logo {
+  header .menu .logo {
     font-size: 25px;
     margin-left: 20px;
   }
@@ -524,7 +524,12 @@ header .menu ul li:nth-child(4)::before {
   }
   header .subMenu {
     display: none;
-  } */
+  }
+  section.home {
+    bottom: 0;
+    height: calc(100vh - 60px);
+    padding-top: 0;
+  }
   section.games .top {
     display: flex;
     flex-direction: column;
