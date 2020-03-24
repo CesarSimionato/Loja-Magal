@@ -269,29 +269,6 @@ section.games .boxType .conteinerGames .boxGame {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.menuBottom {
-  display: none;
-  z-index: 99;
-  background: black;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.menuBottom ul {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.menuBottom ul span {
-  cursor: pointer;
-  margin: 10px 20px;
-  font-size: 35px;
-}
-
 .up {
   display: none;
   position: fixed;
@@ -464,9 +441,6 @@ header ul li:nth-child(4)::before {
 }
 
 @media(max-width: 700PX) {
-  .menuBottom {
-    display: block;
-  }
   header .menu .logo {
     margin-left: 20px;
   }
